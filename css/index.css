@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@601&display=swap');
+
+::selection {
+    background: #FFA57F; /* Safari */
+    color: white;
+}
+
+::-moz-selection {
+    background: #FFA57F; /* Firefox */
+    color: white;
+}
+
+*{
+    box-sizing: content-box;
+    font-family: Arial;
+    /* user-select: none;  */
+    /* Отключение выделения тексту */
+}
+
+
+
+/* Отключение выделения изображений */
+img{
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+
+
+/* Header Section */
+
+nav{
+    background: rgb(2,0,36);
+    background: linear-gradient(47deg, rgba(2,0,36,1) 0%, rgba(141,161,196,1) 0%, rgba(249,142,109,1) 100%);
+    box-shadow: #000;
+    -webkit-box-shadow: 0px 3px 15px -2px rgba(0,0,0,0.72);
+    -moz-box-shadow: 0px 3px 15px -2px rgba(0,0,0,0.72);
+    box-shadow: 0px 3px 15px -2px rgba(0,0,0,0.72);
+    opacity: 80%;
+}
+
+.nav-item{
+    padding: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+    transition: background-color .3s;
+    border-radius: 5px;
+}
+
+.nav-vk-button, .nav-discord-button{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.nav-item:hover{
+    background-color: #a06c5f;
+}
+
+
+.fab{
+    transform: scale(1.6);
+}
+
+
+.nav-link{
+    font-weight: bold;
+}
+
+.nav-padding{
+    padding: 20px;
+}
+
+
+/* Main Section */
+
+main .container-fluid, .container{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Parallax Section */
+
+.parallax-div{
+    margin: 0 auto;
+    background: url("../img/parallax-image.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 600px;
+}
+
+.parallax-text{
+    text-align: center;
+    color: white;
+}
+
+.parallax-text>h1{
+    font-weight: bold;
+    font-size: 4.5em;
+}
+
+.parallax-text > p{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* Server Description */
+
+.server-description{
+   width: 60%;
+   margin: 0 auto;
+   margin-top: 3%;
+   text-align: center;
+   font-size: 1.3em;
+}
+
+/* Meters Section */
+
+/* .meters{
+    background: url("../img/meters-bg.png");
+    background-size: cover;
+    background-position: center;
+    max-width: 1000px;
+    min-height: 600px;
+    
+    width: 100%;
+    
+    margin: 0 auto;
+    margin-top: 15%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+} */
+/* 
+.meters-container{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.meters{
+    width: 100%;
+    background-color: #000;
+    color: orangered;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.meters > #online-meter{
+    float: left;
+}
+
+.meters > #account-meter{
+    float: right;
+}
+
+.online-count{
+    font-size: 0.5em;
+}
+
+#online-meter, #account-meter{
+    margin: 15%;
+} */
+
+
+
+
+
+.meters-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    background-color: #000;
+    border-radius: 20px;
+     
+}
+
+.meters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.meters div[class*="col"]{
+    font-family: Comfortaa;
+    font-size: 2em;
+    padding: 5px 30px;
+    color: rgb(255,166,0,1);
+}
+
+
+
+
+.max-online-count{
+    font-size: 0.8em;
+}
+
+
+
+
+
+/* How to play tutorial */
+
+
+.how-to-play{
+    font-size: 2.5em;
+    margin-top: 10%;
+    font-weight: bold;
+}
+
+.how-to-play-info{
+    margin-top: 10%;
+     /* margin-bottom: 20%;  */
+}
+
+.row{
+    margin: 0;
+}
+
+.how-to-play-info p{
+    font-size: 1.3em;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.how-to-play-info a{
+	background-color:#ffffff;
+	border-radius:28px;
+	border:1px solid #ffa200;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffa200;
+	font-family: Arial;
+    font-size: 22px;
+    font-weight: bold;
+	padding:17px 31px;
+    text-decoration:none;
+    transition: background-color .3s, color .3s;
+}
+
+.how-to-play-info a:hover{
+    background-color: #ffa200;
+    color: white;
+}
+
+.sunset-bg{
+  
+}
+
+/* Расположение арта девушки */
+
+.woman-art{
+    position: absolute;
+    top: 80;
+    left: 0;
+    opacity: 40%;
+}
+
+/* Отключение выделения девушки */
+
+.woman-art-i{
+    pointer-events: none;
+    user-select: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px)
+{
+    .nav-item{
+        padding: 0;
+        padding: 3%;
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    .how-to-play-info p{
+        font-size: 1.3em;
+        margin-bottom: 4%;
+        margin-top: 13%;
+    }
+
+    .woman-art{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.b-bg{
+    background-color: #000;
+}
